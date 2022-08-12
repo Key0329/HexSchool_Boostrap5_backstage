@@ -1,3 +1,15 @@
+// modal
+// const modalByDelete = document.querySelector("#deleteModal");
+// modalByDelete.addEventListener("show.bs.modal", function(event){
+//     const button = event.relatedTarget;
+//     const orderId = button.dataset.bsOrderId;
+//     console.log(button, orderId);
+//     const modalText = modalByDelete.querySelector("#deleteText");
+
+//     modalText.textContent = orderId;
+// }),
+
+// 首頁圖表
 (() => {
     const chartColors = {
         red: 'rgb(255, 99, 132)',
@@ -86,11 +98,10 @@
 })();
 
 
-
+// sidebar
 const toggleMenuBtn = document.querySelector("#toggle-btn");
 const body = document.querySelector("body");
 toggleMenuBtn.addEventListener("click", (e) => {
     e.preventDefault();
     body.classList.toggle("sidebar-toggled");
 })
-
